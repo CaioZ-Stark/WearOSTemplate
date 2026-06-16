@@ -4,16 +4,28 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:gravity="center"
+    android:background="#ffffff"
     android:orientation="vertical">
 
     <TextView
         android:id="@+id/txtTitulo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Titulo"
+        android:layout_marginBottom="16dp"
+        android:text="Vamos correr"
+        android:textColor="#ff000000"
         android:textSize="18sp"
-        android:textStyle="bold"
-        android:layout_marginBottom="16dp"/>
+        android:textStyle="bold" />
+    <TextView
+        android:id="@+id/txtnumero"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:text="00:00:00"
+        android:textColor="#ff000000"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
 
     <LinearLayout
         android:layout_width="wrap_content"
@@ -24,14 +36,18 @@
             android:id="@+id/btnPlay"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Play"/>
+            android:backgroundTint="#ff00"
+            android:text="▶"
+            />
 
         <Button
             android:id="@+id/btnStop"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Stop"
-            android:layout_marginStart="8dp"/>
+            android:text="⏯"
+            android:textColor="#ff00"
+            android:layout_marginStart="8dp"
+            android:backgroundTint="#ffffff"/>
 
     </LinearLayout>
 
