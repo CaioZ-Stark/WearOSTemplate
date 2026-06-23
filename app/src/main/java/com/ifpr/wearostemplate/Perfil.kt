@@ -2,10 +2,11 @@ package com.ifpr.wearostemplate.presentation
 
 import android.os.Bundle
 import android.widget.Button
-import androidx.appcompat.app.AppCompatActivity
+
+import androidx.activity.ComponentActivity
 import com.ifpr.wearostemplate.R
 
-class Perfil : AppCompatActivity() {
+class Perfil : ComponentActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)

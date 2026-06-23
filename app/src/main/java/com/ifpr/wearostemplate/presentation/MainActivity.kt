@@ -5,7 +5,6 @@ import android.os.Bundle
 import android.widget.Button
 import androidx.activity.ComponentActivity
 import androidx.core.splashscreen.SplashScreen.Companion.installSplashScreen
-
 import com.ifpr.wearostemplate.R
 
 class MainActivity : ComponentActivity() {
