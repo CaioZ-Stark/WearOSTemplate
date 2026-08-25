@@ -4,10 +4,10 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     android:gravity="center"
     android:background="#FFFFFF"
-    android:orientation="vertical"
-    android:padding="16dp">
+    android:padding="8dp">
 
     <!-- TÍTULO -->
 
@@ -15,11 +15,11 @@
         android:id="@+id/txtTitulo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="16dp"
         android:text="Vamos correr"
         android:textColor="#000000"
-        android:textSize="18sp"
-        android:textStyle="bold" />
+        android:textSize="14sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="4dp" />
 
     <!-- TEMPO -->
 
@@ -29,16 +29,8 @@
         android:layout_height="wrap_content"
         android:text="00:00"
         android:textColor="#000000"
-        android:textSize="28sp"
+        android:textSize="24sp"
         android:textStyle="bold" />
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="16dp"
-        android:text="Tempo"
-        android:textColor="#000000"
-        android:textSize="12sp" />
 
     <!-- DISTÂNCIA -->
 
@@ -48,16 +40,9 @@
         android:layout_height="wrap_content"
         android:text="0.00 km"
         android:textColor="#000000"
-        android:textSize="22sp"
-        android:textStyle="bold" />
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="16dp"
-        android:text="Distância"
-        android:textColor="#000000"
-        android:textSize="12sp" />
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:layout_marginTop="2dp" />
 
     <!-- RITMO -->
 
@@ -66,17 +51,9 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="-- min/km"
-        android:textColor="#000000"
-        android:textSize="18sp"
-        android:textStyle="bold" />
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="16dp"
-        android:text="Ritmo médio"
-        android:textColor="#000000"
-        android:textSize="12sp" />
+        android:textColor="#555555"
+        android:textSize="13sp"
+        android:layout_marginBottom="6dp" />
 
     <!-- BOTÕES -->
 
@@ -88,28 +65,44 @@
 
         <Button
             android:id="@+id/btnStart"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="55dp"
+            android:layout_height="45dp"
             android:text="▶"
-            android:textSize="18sp" />
+            android:textColor="#FFFFFF"
+            android:textSize="16sp"
+            android:backgroundTint="#FF0000"
+            android:minWidth="0dp"
+            android:minHeight="0dp"
+            android:padding="0dp" />
 
         <Button
             android:id="@+id/btnStop"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="8dp"
-            android:text="⏹"
-            android:textSize="18sp" />
+            android:layout_width="55dp"
+            android:layout_height="45dp"
+            android:layout_marginStart="6dp"
+            android:text="■"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp"
+            android:backgroundTint="#FF0000"
+            android:minWidth="0dp"
+            android:minHeight="0dp"
+            android:padding="0dp" />
 
     </LinearLayout>
 
-    <!-- PERFIL -->
+    <!-- DADOS / PERFIL -->
 
     <Button
         android:id="@+id/btnPerfil"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
-        android:text="Dados" />
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="5dp"
+        android:text="Dados"
+        android:textColor="#FFFFFF"
+        android:textSize="12sp"
+        android:backgroundTint="#FF0000"
+        android:minWidth="0dp"
+        android:minHeight="0dp"
+        android:padding="0dp" />
 
 </LinearLayout>
